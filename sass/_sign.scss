@@ -1,0 +1,74 @@
+#signin {
+  background: $white;
+  font-family: "raleway";
+  .container {
+      .col-md-6{
+        &:nth-child(2){
+          @media screen and (max-width: $break-medium){
+            margin-top:30px;
+          }
+        }
+      }
+      .logbox {
+        padding: 50px 5px 30px;
+        margin: auto;
+        background-color: #fff;
+        -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+        -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+        box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25); 
+        @media screen and (min-width: $break-large){
+          width: 450px;
+        }  
+          h1 {
+            text-align: center;
+            font-size: 175%;
+            color: #757575;
+            font-weight: 300;
+          }
+          .input {
+            width: 75%;
+            height: 50px;
+            display: block;
+            margin: 0 auto 15px;
+            padding: 0 15px;
+            border: none;
+            border-bottom: 2px solid #ebebeb; outline: none;
+              .input:focus {
+                border-bottom-color: #3CC !important;
+              }
+              .input:hover {
+                border-bottom-color: #dcdcdc;
+              }
+              .input:invalid {
+                box-shadow: none;
+              }
+              .pass:-webkit-autofill {
+                -webkit-box-shadow: 0 0 0 1000px white inset;
+              }
+          }
+          .submit-container{    
+            text-align: center;
+              & .submit-sign {
+                  background: $white;
+                  border: 2px solid $light-blue-200;
+                  border-radius: 30px;
+                  width: 80%;
+                  padding: 10px;
+                  color: $light-blue-200;
+                  span{background:none;border:none}
+                  &:before{
+                      background: $light-blue-200;
+                      border-radius: 2px;
+                      top:100%;
+                      right:0;
+                  }
+                  &:hover{
+                      background: transparent;
+                      & span{color: $white}
+                      &:before{top:0}
+                  }
+              }
+          }
+      }
+  }
+}

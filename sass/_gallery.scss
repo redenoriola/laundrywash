@@ -1,0 +1,77 @@
+
+.container.gallery-container {
+    background-color: #fff;
+    color: #35373a;
+}
+
+.gallery-container h1 {
+    text-align: center;
+    font-family: 'Droid Sans', sans-serif;
+    font-weight: bold;
+}
+
+.gallery-container p.page-description {
+    text-align: center;
+    margin: 25px auto;
+    font-size: 18px;
+    color: #999;
+}
+
+.tz-gallery {
+    /* Override bootstrap column paddings */
+    & .row > div {
+        padding: 2px;
+    }
+    & .lightbox{
+        &:hover{
+            & i{opacity: 1}
+            &:after{opacity: 1}
+        }
+        &:after:hover{
+            opacity: 1;
+        }
+    }
+    & .lightbox i {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -13px;
+        margin-left: -13px;
+        opacity: 0;
+        color: #fff;
+        font-size: 26px;
+        pointer-events: none;
+        z-index: 9000;
+        transition: 0.4s;
+    }
+    & .lightbox img {
+        width: 100%;
+        border-radius: 0;
+        position: relative;
+    }
+
+    & .lightbox:after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        background-color: rgba(46, 132, 206, 0.7);
+        content: '';
+        transition: 0.4s;
+    }
+    .baguetteBox-button {
+        outline:none!important;
+        background-color: transparent !important;
+        svg{outline:none!important}
+    }
+}
+
+@media(max-width: 768px) {
+    body {
+        padding: 0;
+    }
+}
+
+

@@ -1,0 +1,14 @@
+{
+  "name": "londre",
+  "version": "1.0.0",
+  "description": "Laundry website template",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Reden Oriola",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.3.1"
+  }
+}

@@ -1,0 +1,23 @@
+// import declaration
+@import "_variables.scss";
+//import global variables
+@import "_global.scss";
+
+//user signin
+@import "_sign.scss";
+//import webpage styles
+@import "_navbar.scss";
+@import "_header.scss";
+@import "_how.scss";
+@import "_about.scss";
+@import "_pricing.scss";
+@import "_testimonial.scss";
+@import "_faqs.scss";
+@import "_locations.scss";
+@import "_newsletter.scss";
+@import "_footer.scss";
+
+//other pages
+@import "_gallery.scss";
+@import "_services.scss";
+@import "_contact.scss";

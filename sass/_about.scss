@@ -1,0 +1,58 @@
+#about{
+    line-height: 30px;
+    .row{
+        .col{
+            text-align: center;
+            color: $text-primary;
+            .title{
+                margin: 0 0 20px 0;
+                color: $black;
+            }
+            img{width:70%; margin:auto; position: relative;}
+        }
+        .col:nth-child(2){padding: 30px 0;}
+        .col:nth-child(1){padding: 30px;text-align:left}
+    }
+}
+#vm-about{
+  background: $yellow-100;
+  border: 2px solid $yellow-100;
+  border-radius: 30px;
+  color: $white;
+  &:before{
+      background: $gray;
+  }
+  &:hover{
+      background: transparent;
+      color: $yellow-200;
+  }
+}
+
+//Team
+#team{
+    position: relative;
+    font-family: raleway;
+    padding-bottom: 80px;
+    font-size: 15px;
+    .container{
+        .row{
+            & .team-container{
+                padding: 0 20px;
+               & .team-member{
+                    display: block;
+                    overflow: hidden;
+                    position: relative;
+                    & img{
+                        width:100%;
+                        height:100%;
+                    }
+               }
+               & .team-detail{
+                    h5 {margin-top:15px}
+                    p{margin-bottom:5px}
+               }
+            }
+        }
+    }
+}
+

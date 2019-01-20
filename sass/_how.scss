@@ -1,0 +1,28 @@
+#how{
+    .row:nth-child(2){
+        text-align: center;
+            .how-container{
+                padding: 0 20px;
+                h3{
+                font-family: "raleway";
+                font-weight: 500;
+                margin: 20px 0;
+                }
+                p{color: lighten($black,50%)}
+            }
+            #vm-services{
+                background: $pink-100;
+                margin: 30px auto 0;
+                border: 2px solid $pink-100;
+                border-radius: 30px;
+                color: $white;
+                &:before{
+                    background: $white;
+                }
+                &:hover{
+                    background: transparent;
+                    color: $pink-100;
+                }
+            }
+    }
+}

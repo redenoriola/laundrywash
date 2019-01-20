@@ -1,0 +1,37 @@
+#faqs{
+    .container{
+        .row{
+            text-align: left;
+                .faq-container{
+                    text-align: left;
+                    position: relative;
+                    margin: 20px 0;
+                    .question-btn{
+                        background: transparent;
+                        border: 2px solid $light-blue-200;
+                        color: $light-blue-200;
+                        padding: 15px;
+                        width: 100%;
+                        border-radius: 10px;
+                    }
+                    
+                }
+                .faq-container:nth-child(1),.faq-container:nth-child(2){
+                    margin-top:0;
+                }
+            }
+        }               
+        #vm-faqs{
+            background: $yellow-100;
+            border: 2px solid $yellow-100;
+            border-radius: 30px;
+            color: $white;
+            &:before{
+                background: $gray;
+            }
+                &:hover{
+                    background: transparent;
+                    color: $yellow-200;
+                }
+        }
+}
